@@ -1,11 +1,11 @@
 import React from 'react';
 import{View}from 'react-native';
-import  Welcome from './src/welcome';
-const app=()=>{
+//import Image from './src/image';
+import Audio from './src/audio';
+const app=()=>{         
   return(
     <View>
-     <Welcome/>
-     <Welcome/>
+     <Audio/>
     </View>
   );
 };

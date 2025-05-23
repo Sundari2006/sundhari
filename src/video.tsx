@@ -7,7 +7,7 @@ const VideoPlayer = () => {
     <View style={styles.container}>
       <Text style={styles.title}>Play Local Video</Text>
       <Video 
-       source={require('./asset/audio.mp3')}
+       source={require('./asset/video.mp4')}
        style={styles.video}
        controls
        resizeMode="contain"
@@ -35,7 +35,7 @@ const styles=StyleSheet.create({
     },
     video:{
         width:width -32,
-        height:(width -32)*0.5625
+        height:(width -32) 
     },
 });
 export default VideoPlayer;

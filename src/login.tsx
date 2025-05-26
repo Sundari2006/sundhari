@@ -1,12 +1,16 @@
 
 import React,{useState} from 'react'
-import { Button, TextInput,View,Text,Alert,StyleSheet } from 'react-native'
-import welcome from './welcome';
+import { Button, TextInput,View,Text,Alert,StyleSheet } from 'react-native';
 export default  function  Loginscreen(){
   const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
   const handleLogin=()=>{
-  
+  if(email==="||password==="){
+    Alert.alert('Error','Please fill in all fields');
+  }
+  else{
+    Alert.alert('Success');
+  }
   };
   
   return(
@@ -50,8 +54,8 @@ const styles=StyleSheet.create({
     maxWidth:300,
     height:60,
     borderColor:'black',
-    borderWidth:4,
+    borderWidth:1,
     marginBottom:30,
-    borderRadius:3,marginVertical:10
+    borderRadius:20,marginVertical:10
   },
 })
